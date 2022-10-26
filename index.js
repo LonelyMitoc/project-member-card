@@ -98,7 +98,7 @@ let manager;
 const employeeArr = [];
 
 // Functions to take the responses and set for the manager and push the Engineer and Intern objects to the set array
-function populateManagerInfo(response) {
+function managerInfo(response) {
     manager = new Manager(response.name, response.id, response.email, response.officeNumber);
     return response.employeeClass;
 };
@@ -174,6 +174,7 @@ function generateHTML(manager, employeeArr) {
     </html>`
 };
 
+// Generate the employee info in HTML format
 function generateEmployeeHTML(employeeArr) {
     let employeeHtmlArr = [];
 
@@ -196,18 +197,41 @@ function generateEmployeeHTML(employeeArr) {
             let html = `
             <div class="col-12 col-md-6 col-xl-4">
                     <div class="card mx-auto mt-3 shadow">
-                        <div class="card-body bg-COLOR">
+                        <div class="card-body bg-${color}">
                         <h5 class="card-title fw-bold">${employeeArr[i].getName()}</h5>
-                        <h6 class="card-subtitle mb-2 text-muted">ICON ${employeeArr[i].getRole()}</h6>
+                        <h6 class="card-subtitle mb-2 text-muted">${icon} ${employeeArr[i].getRole()}</h6>
                         </div>
                         <ul class="list-group list-group-flush">
                             <li class="list-group-item">ID: ${employeeArr[i].getId()}</li>
                             <li class="list-group-item">Email: <a href="mailto:${employeeArr[i].getEmail()}">${employeeArr[i].getEmail()}</a></li>
-                            <li class="list-group-item">${engOrIntern}</li>
+                            <li class="list-group-item">${gitOrSchool}</li>
                         </ul>
                     </div>
                 </div>
-            `
+            `;
+            employeeHtmlArr.push(html);
         }
+        return employeeHtmlArr.join('');
+
+    } else {
+        return '';
     }
-}
+};
+
+// Method to generate the HTML file into the ./dist directory
+function writeHTML() {
+    const body = generateHTML(manager, employeeArr);
+
+    fs.writeFile('./dist/index.html', body, (err) =>
+    err ? console.error(err) : console.log('HTML Generated!'))
+};
+
+// Function to initiate the app
+function init() {
+    inquirer
+        .prompt(initQuestions)
+        .then(managerInfo)
+        .then(generateTeam)
+};
+
+init();
