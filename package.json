@@ -1,0 +1,27 @@
+{
+  "name": "project-member-card",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LonelyMitoc/project-member-card.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LonelyMitoc/project-member-card/issues"
+  },
+  "homepage": "https://github.com/LonelyMitoc/project-member-card#readme",
+  "dependencies": {
+    "inquirer": "^8.2.4"
+  }
+}
