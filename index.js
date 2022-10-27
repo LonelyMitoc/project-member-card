@@ -38,7 +38,7 @@ const initQuestions = [
 const engineerQuestions = [
     {
         type: 'input',
-        message: `what is the name of the engineer?`,
+        message: `What is the name of the engineer?`,
         name: 'name'
     },
     {
@@ -67,7 +67,7 @@ const engineerQuestions = [
 const internQuestions = [
     {
         type: 'input',
-        message: `what is the name of the intern?`,
+        message: `What is the name of the intern?`,
         name: 'name'
     },
     {
