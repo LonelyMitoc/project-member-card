@@ -1,5 +1,6 @@
 const Employee = require('../lib/Employee');
 
+// Test Employee constructor
 describe('Employee', () => {
     describe('Initialization', () => {
         it(`Employee constructor should populate the 'name', 'id', 'email' value when passed through the 'new' method`, () => {
