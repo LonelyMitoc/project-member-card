@@ -71,6 +71,8 @@ Contribution inquiries can be sent through the Github or the email in the questi
 ## Tests
 Four test.js were created in order to test each constructor's methods that are nestled in the code. Parameters were set for different kinds of inputs the user could possibly submit.
 
+Additional tests were conducted by running the program a few times to check if there were any syntax or parameter errors.
+
 ## Credits
 - [MDN Wed Docs](https://developer.mozilla.org/en-US/)
 - [Stack Overflow](https://stackoverflow.com/)
