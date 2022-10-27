@@ -162,7 +162,7 @@ function generateHTML(manager, employeeArr) {
                         <ul class="list-group list-group-flush">
                             <li class="list-group-item">ID: ${manager.getId()}</li>
                             <li class="list-group-item">Email: <a href="mailto:${manager.getEmail()}">${manager.getEmail()}</a></li>
-                            <li class="list-group-item">Office Number: ${manager.getOfficeNumber()}</li>
+                            <li class="list-group-item">Office Number: ${manager.getOffice()}</li>
                         </ul>
 
                     </div>

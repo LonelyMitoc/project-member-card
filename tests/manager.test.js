@@ -16,7 +16,7 @@ describe('Manager', () => {
     // Test Manager methods
     describe('Manager', () => {
         it(`'getOffice' method should return 'officeNumber' input`, () => {
-            const obj = new Engineer('jane', 123, 'example@gmail.com', 456);
+            const obj = new Manager('jane', 123, 'example@gmail.com', 456);
 
             expect(obj.getOffice()).toBe(456);
         })

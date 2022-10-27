@@ -16,7 +16,7 @@ describe('Intern', () => {
     // Test Intern methods
     describe('Intern', () => {
         it(`'getSchool' method should return 'school' input`, () => {
-            const obj = new Engineer('jane', 123, 'example@gmail.com', 'uw');
+            const obj = new Intern('jane', 123, 'example@gmail.com', 'uw');
 
             expect(obj.getSchool()).toBe('uw');
         })

@@ -40,7 +40,7 @@ describe('Employee', () => {
     })
 
     // Testing each incorrect input
-    describe('Incorrect Input'), () => {
+    describe('Incorrect Input', () => {
         // For getName
         it(`Error if 'name' input is not a string`, () => {
 
@@ -91,5 +91,5 @@ describe('Employee', () => {
             
             expect(testInput).toThrowError(err);
         })
-    }
+    })
 })
