@@ -26,7 +26,7 @@ The only difficulty posed during the project was the building the tests to catch
 Example of the input, HTML and webpage that is generated:
 
 ![terminal screenshot showing input](./src/images/terminal-screenshot.jpg)
-[<img src="./src/images/sample-html.png" width="350"/>](./src/images/sample-html.png)
+[<img src="./src/images/sample-html.png" width="290"/>](./src/images/sample-html.png)
 ![example of generated webpage in a browser](./src/images/sample-webpage.jpg)
 
 ## Installation
