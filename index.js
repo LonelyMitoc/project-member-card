@@ -187,11 +187,11 @@ function generateEmployeeHTML(employeeArr) {
             if (employeeArr[i].getRole() === 'Engineer') {
                 icon = `&#128187`;
                 color = `info`
-                gitOrSchool = `GitHub: <a href="https://github.com/${employeesArr[i].getGithub()}">${employeesArr[i].getGithub()}</a>`;
+                gitOrSchool = `GitHub: <a href="https://github.com/${employeeArr[i].getGithub()}">${employeeArr[i].getGithub()}</a>`;
             } else {
                 icon = `&#127891`;
                 color = `light`
-                gitOrSchool = `School: ${employeesArr[i].getSchool()}`;
+                gitOrSchool = `School: ${employeeArr[i].getSchool()}`;
             }
 
             let html = `
